@@ -658,7 +658,7 @@ preflight coverage and the module-name registry.
 
 ## Acknowledgements
 
-Built on [MEFormer](https://github.com/MCG-NJU/MEFormer), which in turn builds on
+Built on [MEFormer](https://github.com/hanchaa/MEFormer), which in turn builds on
 [MMDetection3D](https://github.com/open-mmlab/mmdetection3d), PETR/DETR3D and CMT. Robustness
 evaluation follows [MultiCorrupt](https://github.com/ika-rwth-aachen/MultiCorrupt). The evidential
 formulation draws on Deep Evidential Regression, E-DETR and MT-ENet.
