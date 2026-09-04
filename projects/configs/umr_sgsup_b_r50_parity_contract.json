@@ -1,0 +1,26 @@
+{
+  "format": "umr_sgsup_b_r50_parity_contract_v1",
+  "candidate": "RULE_SGSUP_B_contextheight055_v9bev_dyn10_30",
+  "source": {
+    "generator_commit": "40b0efa929089b8ba92a8a9720564d3b7fbb4d8a",
+    "path": "work_dirs/umr_rule_runtime_dup_sweep_large_20260703_192741/configs/RULE_SGSUP_B_contextheight055_v9bev_dyn10_30.py",
+    "sha256": "c250ad2d40284a5d0594a93637c7b426e0b751303755ca6c0955bb0266b6fc52"
+  },
+  "action": {
+    "dynamic_budget_ratio": [0.1, 0.3],
+    "fused_replace_score_ceiling": 0.35,
+    "img_score_threshold": 0.02,
+    "max_add_queries": 90,
+    "mode": "img_highscore",
+    "nms_center_dist": 0.005,
+    "rank_mode": "img_score",
+    "scene_threshold_key": "clean_fpr_005",
+    "utility_threshold": 0.45
+  },
+  "guard": {
+    "context": ["v8_context_img_damage_mean", "<", -0.64882296],
+    "context_or_height": true,
+    "height": ["distance_bin_abnormality_stats.height.bev.mid", "<", 0.55],
+    "v9_bev_veto": ["v9_a_bev_above_tau_mean", "<", 0.6]
+  }
+}

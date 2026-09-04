@@ -1,0 +1,35 @@
+# MMLab stack (pinned; these versions are mutually compatible with torch 1.13.1)
+mmcv-full==1.6.0
+mmdet==2.24.0
+mmdet3d==1.0.0rc5
+mmsegmentation==0.29.1
+mmcls==0.25.0
+
+# 3D / CUDA dependencies. Must match the torch CUDA build (cu117).
+spconv-cu117==2.3.6
+cumm-cu117==0.4.11
+
+# flash-attn is NOT listed here: it needs --no-build-isolation and is installed
+# in a separate Dockerfile step. It is a hard requirement, not optional --
+# projects/mmdet3d_plugin/models/utils/attention.py imports it at import time.
+
+# Core scientific / ML libraries
+numpy==1.23.5
+pandas==2.0.3
+scikit-learn==1.3.2
+scikit-image==0.19.3
+matplotlib==3.5.3
+numba==0.53.0
+
+# Project-specific tooling
+nuscenes-devkit==1.1.11
+lyft-dataset-sdk==0.0.8
+pyquaternion==0.9.9
+tqdm
+einops
+
+# Development / formatting tools
+yapf==0.40.1
+flake8
+black
+pytest
