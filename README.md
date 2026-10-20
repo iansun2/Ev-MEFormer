@@ -39,6 +39,7 @@ Further reading:
 4. [Inference and evaluation](#4-inference-and-evaluation)
 5. [Tests](#5-tests)
 6. [Troubleshooting](#6-troubleshooting)
+7. [Citation](#citation)
 
 ---
 
@@ -653,6 +654,25 @@ preflight coverage and the module-name registry.
 | `[UMR-SUP][WARN] ... missing_or_invalid=[...]` during a line3 run | The scene mapper could not resolve every feature, so the gate failed closed and the supplement never ran. Audit with `tools/check_sgsup_admission_contract.py`; the result cannot be used to judge supplement efficacy. |
 | `data/nuscenes` looks wrong after an interrupted MultiCorrupt run | The trap did not fire. Inspect `data/nuscenes` and `data/nuscenes.multicorrupt-backup` and restore manually. |
 | R50 artifacts appear to "work" on VoV | They do not. Checkpoints, calibration JSONs and runtime packs are bound to a backbone, config, checkpoint and data distribution. Never cross them. |
+
+---
+
+## Citation
+
+Our paper has been accepted for oral presentation at the 23rd International Conference on
+Automation Technology (Automation 2026).
+
+If you find our work useful in your research, please consider citing:
+
+```bibtex
+@inproceedings{hsieh2026evmeformer,
+  title     = {Ev-MEFormer: Evidential Uncertainty-Aware Multimodal 3D Object Detection for Robust Mobile Robot Perception},
+  author    = {Hsieh, Yen-Yu and Hsu, Hui-Che and Chen, Ting-Yu and Sun, Yi-Heng and Jhong, Sin-Ye and Tsai, Jung-Ting and Chen, Yung-Yao},
+  booktitle = {Proceedings of the 23rd International Conference on Automation Technology (Automation 2026)},
+  year      = {2026},
+  note      = {To appear. Oral presentation}
+}
+```
 
 ---
 
